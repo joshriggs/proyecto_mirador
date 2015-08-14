@@ -59,14 +59,14 @@
   border: solid 2px $action-color;
   border-radius: 6px;
 
-  &:before {
-    font-family: "FontAwesome";
-    font-size: 1.25em;
-    display: inline-block;
-    content: '';
-    margin-right: .25em;
-    vertical-align: baseline;
-  }
+  //&:before {
+    //font-family: "FontAwesome";
+    //font-size: 1.25em;
+    //display: inline-block;
+    //content: '';
+    //margin-right: .25em;
+    //vertical-align: baseline;
+  //}
 }
 
 .close-toggle {
