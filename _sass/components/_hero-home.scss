@@ -1,0 +1,33 @@
+.hero-home {
+  text-align: center;
+  position: relative;
+  margin-bottom: $gutter;
+}
+
+.hero-home img {
+  vertical-align: bottom;
+}
+
+.hero-home .hero-text {
+  background: lighten($light-gray, 5%);
+  padding: 1em;
+
+  @include media($medium-large-screen) {
+    position: absolute;
+    bottom: 3em;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    background: transparent;
+  }
+
+  h1 {
+    font-size: 1.25em;
+
+    @include media($medium-large-screen) {
+      max-width: 25em;
+      margin: 0 auto 2em auto;
+      font-size: 2em; 
+    }
+  }
+}

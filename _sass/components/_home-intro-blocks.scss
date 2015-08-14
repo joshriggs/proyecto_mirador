@@ -1,0 +1,30 @@
+.home-intro-blocks {
+  margin-bottom: $gutter * 2;
+
+  .cards {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+
+    .card {
+      @include flex-basis(21em);
+      @include flex-grow(1);
+      margin: 0 1em;
+
+      @include media($large-screen) {
+        @include flex-basis(15em);
+      }
+    }
+    
+    .card-image {
+      max-height: 180px;
+      margin-bottom: 1em;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+}

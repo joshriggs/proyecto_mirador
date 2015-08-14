@@ -1,0 +1,44 @@
+.deep-dive {
+  @include outer-container;
+  margin-bottom: $gutter;
+
+  @include media($medium-large-screen) {
+    margin-bottom: $gutter * 2;
+  }
+
+  img {
+    @include span-columns(12);
+
+    @include media($medium-screen) {
+      @include span-columns(6);
+    }
+  }
+
+  .deep-dive-text {
+    @include span-columns(12);
+    p {
+      display: none;
+    }
+
+    @include media($medium-screen) {
+      @include span-columns(6);
+      p {
+        display: block;
+      }
+    }
+  }
+
+  &:nth-child(even) {
+    img {
+      @include media($medium-large-screen) {
+        @include shift(6);
+      }
+    }
+
+    .deep-dive-text {
+      @include media($medium-large-screen) {
+        @include shift(-12);
+      }
+    }
+  }
+}

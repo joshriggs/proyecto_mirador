@@ -1,0 +1,23 @@
+.site-header {
+  height: 70px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.52);
+  width: 100%;
+  padding: 1em;
+  background-color: white;
+
+  @include media($medium-large-screen) {
+    position: fixed;
+    z-index: 900;
+  }
+}
+
+h1.site-logo {
+  display: inline;
+  font-size: 1.25em;
+  padding-left: .5em;
+
+  @include media($large-screen) {
+    font-size: 1.5em;
+  }
+}
+

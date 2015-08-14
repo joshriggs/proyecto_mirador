@@ -1,0 +1,32 @@
+.nav-left {
+  @include span-columns(12);
+
+  @include media($medium-screen) {
+    @include span-columns(7);
+  }
+  @include media($medium-large-screen) {
+    @include span-columns(5);
+  }
+}
+
+.nav-right{
+  text-align: right;
+  display: none;
+
+  @include media($medium-screen) {
+    @include span-columns(5);
+    display: block;
+  }
+  @include media($medium-large-screen) {
+    @include span-columns(7);
+  }
+}
+
+input.header-search {
+  max-width: 280px;
+  display: none;
+
+  @include media($medium-large-screen) {
+    display: inline-block;
+  }
+}

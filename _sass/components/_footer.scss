@@ -1,0 +1,12 @@
+.site-footer {
+  @include outer-container;
+  padding: $gutter 0; 
+}
+
+.site-footer .footer-links {
+
+  li {
+    display: inline-block;
+    padding-right: 1em;
+  }
+}

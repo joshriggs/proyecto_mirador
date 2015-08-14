@@ -1,0 +1,12 @@
+.donate-cta {
+  background: $dark-gray;
+  color: white;
+  text-align: center;
+  padding: 3em 1em;
+
+  font-size: 1em;
+
+  @include media($medium-screen) {
+    font-size: auto;
+  }
+}
