@@ -1,9 +1,17 @@
 .deep-dive {
-  @include outer-container;
   margin-bottom: $gutter;
 
   @include media($medium-large-screen) {
     margin-bottom: $gutter * 2;
+  }
+}
+
+.deep-dive-item {
+  @include outer-container;
+  margin-bottom: $gutter;
+
+  @include media($medium-screen) {
+    margin-bottom: $gutter * 2.5
   }
 
   img {

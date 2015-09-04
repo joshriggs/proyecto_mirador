@@ -556,6 +556,9 @@ h4 {
 p {
   margin: 0 0 0.75em; }
 
+.page-content p {
+  font-size: 1.125em; }
+
 a {
   color: #477dca;
   text-decoration: none;
@@ -578,8 +581,8 @@ picture {
   max-width: 100%; }
 
 .section-heading {
-  font-size: 1.5em;
-  text-align: center; }
+  text-align: center;
+  margin: 1.618em 0; }
 
 @font-face {
   font-family: 'FontAwesome';
@@ -588,23 +591,52 @@ picture {
   font-weight: normal;
   font-style: normal; }
 body {
-  padding: 0;
-  margin: 0; }
+  padding: 0; }
 
 @media screen and (min-width: 48.125em) {
-  .page-content {
+  .content-container {
     padding-top: 70px; } }
 
-.page-wrap {
+.content-wrapper {
   max-width: 70em;
   margin-left: auto;
   margin-right: auto;
   padding: 0 .5em;
-  clear: both; }
-  .page-wrap::after {
+  margin-bottom: 1.618em; }
+  .content-wrapper::after {
     clear: both;
     content: "";
     display: table; }
+  .content-wrapper .page-content {
+    float: right;
+    display: block;
+    margin-left: 2.35765%;
+    width: 100%; }
+    .content-wrapper .page-content:last-child {
+      margin-left: 0; }
+    @media screen and (min-width: 48.125em) {
+      .content-wrapper .page-content {
+        float: right;
+        display: block;
+        margin-left: 2.35765%;
+        width: 70.14568%; }
+        .content-wrapper .page-content:last-child {
+          margin-left: 0; } }
+  .content-wrapper .sidebar {
+    float: right;
+    display: block;
+    margin-left: 2.35765%;
+    width: 100%; }
+    .content-wrapper .sidebar:last-child {
+      margin-left: 0; }
+    @media screen and (min-width: 48.125em) {
+      .content-wrapper .sidebar {
+        float: right;
+        display: block;
+        margin-left: 2.35765%;
+        width: 27.49666%; }
+        .content-wrapper .sidebar:last-child {
+          margin-left: 0; } }
 
 .nav-left {
   float: left;
@@ -846,35 +878,46 @@ h1.site-logo {
   .dropdown .show-menu {
     display: block; }
 
-.hero-home {
+.hero {
   text-align: center;
   position: relative;
   margin-bottom: 1.618em; }
 
-.hero-home img {
+.hero img {
   vertical-align: bottom; }
 
-.hero-home .hero-text {
+.hero .hero-text {
   background: #eaeaea;
   padding: 1em; }
   @media screen and (min-width: 48.125em) {
-    .hero-home .hero-text {
+    .hero .hero-text {
       position: absolute;
       bottom: 3em;
       width: 100%;
       padding: 0;
       text-align: center;
       background: transparent; } }
-  .hero-home .hero-text h1 {
+  .hero .hero-text h1 {
     font-size: 1.25em; }
     @media screen and (min-width: 48.125em) {
-      .hero-home .hero-text h1 {
+      .hero .hero-text h1 {
         max-width: 25em;
         margin: 0 auto 2em auto;
         font-size: 2em; } }
+  @media screen and (min-width: 40em) {
+    .hero .hero-text p.summary {
+      font-size: 1.25em; } }
 
 .home-intro-blocks {
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 .5em;
   margin-bottom: 3.236em; }
+  .home-intro-blocks::after {
+    clear: both;
+    content: "";
+    display: table; }
   .home-intro-blocks .cards {
     display: -webkit-box;
     display: -moz-box;
@@ -923,57 +966,63 @@ h1.site-logo {
         width: 100%; }
 
 .deep-dive {
+  margin-bottom: 1.618em; }
+  @media screen and (min-width: 48.125em) {
+    .deep-dive {
+      margin-bottom: 3.236em; } }
+
+.deep-dive-item {
   max-width: 70em;
   margin-left: auto;
   margin-right: auto;
   padding: 0 .5em;
   margin-bottom: 1.618em; }
-  .deep-dive::after {
+  .deep-dive-item::after {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (min-width: 48.125em) {
-    .deep-dive {
-      margin-bottom: 3.236em; } }
-  .deep-dive img {
+  @media screen and (min-width: 40em) {
+    .deep-dive-item {
+      margin-bottom: 4.045em; } }
+  .deep-dive-item img {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-    .deep-dive img:last-child {
+    .deep-dive-item img:last-child {
       margin-right: 0; }
     @media screen and (min-width: 40em) {
-      .deep-dive img {
+      .deep-dive-item img {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
-        .deep-dive img:last-child {
+        .deep-dive-item img:last-child {
           margin-right: 0; } }
-  .deep-dive .deep-dive-text {
+  .deep-dive-item .deep-dive-text {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-    .deep-dive .deep-dive-text:last-child {
+    .deep-dive-item .deep-dive-text:last-child {
       margin-right: 0; }
-    .deep-dive .deep-dive-text p {
+    .deep-dive-item .deep-dive-text p {
       display: none; }
     @media screen and (min-width: 40em) {
-      .deep-dive .deep-dive-text {
+      .deep-dive-item .deep-dive-text {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
-        .deep-dive .deep-dive-text:last-child {
+        .deep-dive-item .deep-dive-text:last-child {
           margin-right: 0; }
-        .deep-dive .deep-dive-text p {
+        .deep-dive-item .deep-dive-text p {
           display: block; } }
   @media screen and (min-width: 48.125em) {
-    .deep-dive:nth-child(even) img {
+    .deep-dive-item:nth-child(even) img {
       margin-left: 51.17883%; } }
   @media screen and (min-width: 48.125em) {
-    .deep-dive:nth-child(even) .deep-dive-text {
+    .deep-dive-item:nth-child(even) .deep-dive-text {
       margin-left: -102.35765%; } }
 
 .donate-cta {
@@ -985,3 +1034,39 @@ h1.site-logo {
   @media screen and (min-width: 40em) {
     .donate-cta {
       font-size: auto; } }
+
+.secondary-nav li {
+  margin-bottom: 1em; }
+
+.staff-cards {
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 .5em;
+  margin: 1.618em 0; }
+  .staff-cards::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.staff-cards__card {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  text-align: center;
+  border: solid 1px #ddd;
+  padding: .5em; }
+  .staff-cards__card:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    .staff-cards__card {
+      padding: 1.618em; } }
+
+.stat {
+  font-size: 1.25em;
+  line-height: 1.75;
+  font-style: italic;
+  margin: 1.618em 1em;
+  padding-left: 1em;
+  border-left: solid 4px #ddd; }

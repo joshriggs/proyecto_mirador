@@ -1,0 +1,16 @@
+.staff-cards {
+  @include outer-container;
+  margin: $gutter 0;
+}
+
+.staff-cards__card {
+  @include span-columns(6);
+
+  text-align: center;
+  border: solid 1px $light-gray;
+  padding: .5em;
+
+  @include media($medium-screen) {
+    padding: $gutter;
+  }
+}

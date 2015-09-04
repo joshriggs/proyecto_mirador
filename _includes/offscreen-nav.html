@@ -1,12 +1,9 @@
 <nav class="js-menu sliding-panel-content">
   <ul>
     <li class="close-toggle"><a href="javascript:void(0)" class="sliding-panel-button">Close X</a></li>
-    <li><a href="#">Stove Benefits</a></li>
-    <li><a href="#">Why Honduras?</a></li>
-    <li><a href="#">Carbon</a></li>
-    <li><a href="#">Leadership</a></li>
-    <li><a href="#">Solution</a></li>
-    <li><a href="#">Library</a></li>
+    {% for link in site.data.primary-navigation %}
+    <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
   </ul>
   <input type="text" id="text_field" placeholder="Search The Site">
   <a class="button">Donate Now</a>

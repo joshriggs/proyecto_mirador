@@ -1,4 +1,7 @@
 .home-intro-blocks {
+  @include outer-container;
+
+  
   margin-bottom: $gutter * 2;
 
   .cards {

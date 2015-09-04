@@ -10,27 +10,26 @@
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="canonical" href="joshriggs.github.io/about/">
   <link rel="alternate" type="application/rss+xml" title="Proyecto Mirador" href="joshriggs.github.io/feed.xml" />
-  <script src="assets/js/jquery-1.11.3.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="../assets/js/jquery-1.11.3.min.js"></script>
+  <script src="../assets/js/main.js"></script>
 </head>
 
 
   <body>
-
     <header class="site-header">
   <div class="nav-bar">
     <div class="nav-left">
       <button class="sliding-panel-button menu-toggle">
        Menu
       </button>
-      <h1 class="site-logo"><a href="#">Proyecto Mirador</a></h1>
+      <h1 class="site-logo"><a href="/">Proyecto Mirador</a></h1>
     </div>
     <div class="nav-right">  
       <input class="header-search" type="text" id="text_field" placeholder="Search The Site">
-      <a class="button donate">Donate Now</a> 
+      <a class="button donate">Buy a Stove!</a> 
     </div>
   </div>
 
@@ -38,12 +37,17 @@
   <nav class="js-menu sliding-panel-content">
   <ul>
     <li class="close-toggle"><a href="javascript:void(0)" class="sliding-panel-button">Close X</a></li>
-    <li><a href="#">Stove Benefits</a></li>
-    <li><a href="#">Why Honduras?</a></li>
-    <li><a href="#">Carbon</a></li>
-    <li><a href="#">Leadership</a></li>
-    <li><a href="#">Solution</a></li>
-    <li><a href="#">Library</a></li>
+    
+    <li><a href="/experience/">Experience</a></li>
+    
+    <li><a href="/leadership/">Leadership</a></li>
+    
+    <li><a href="/data/">Data</a></li>
+    
+    <li><a href="/quality/">Quality</a></li>
+    
+    <li><a href="/stove-users/">Stove Users</a></li>
+    
   </ul>
   <input type="text" id="text_field" placeholder="Search The Site">
   <a class="button">Donate Now</a>
@@ -63,26 +67,40 @@
 <div class="js-menu-screen sliding-panel-fade-screen"></div>
 
 </header>
+  
+    <div class="content-container">
+        <section class="hero hero-page">
+  <img src="http://placehold.it/1600x550/c4c4c4/cccccc">
+  <div class="hero-text">
+    <h1>About</h1>
+    <p class="summary"></p>
+  </div>
+</section>
+ <div class="content-wrapper">
+   <aside class="sidebar">
+     <ul class="secondary-nav">
+  
+</ul>
 
-    <div class="page-content">  
-      <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">About</h1>
-  </header>
 
-  <article class="post-content">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
+   </aside>
+   <main class="page-content">
+     <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
 
 <p>You can find the source code for the Jekyll new theme at: <a href="https://github.com/jglovier/jekyll-new">github.com/jglovier/jekyll-new</a></p>
 
 <p>You can find the source code for Jekyll at <a href="https://github.com/jekyll/jekyll">github.com/jekyll/jekyll</a></p>
 
-  </article>
+   </main>
+ </div>
 
-</div>
 
-    </div>    
+    </div>  
+    <section class="donate-cta">
+  <h1 class="section-header">Do some good for a cook and the planet.</h1>
+  <a class="button">Buy a cookstove or part of one!</a>
+</section>
     <footer class="site-footer">
   <ul class="footer-links">
     <li><a href="#">Stove Benefits</a></li>
@@ -94,7 +112,6 @@
   </ul>
   <p>© 2015 Proyecto Mirador</p>
 </footer>
-
 
   </body>
 
