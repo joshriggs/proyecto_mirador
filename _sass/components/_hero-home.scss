@@ -1,14 +1,14 @@
-.hero-home {
+.hero {
   text-align: center;
   position: relative;
   margin-bottom: $gutter;
 }
 
-.hero-home img {
+.hero img {
   vertical-align: bottom;
 }
 
-.hero-home .hero-text {
+.hero .hero-text {
   background: lighten($light-gray, 5%);
   padding: 1em;
 
@@ -28,6 +28,12 @@
       max-width: 25em;
       margin: 0 auto 2em auto;
       font-size: 2em; 
+    }
+  }
+
+  p.summary {
+    @include media($medium-screen) {
+      font-size: 1.25em;
     }
   }
 }

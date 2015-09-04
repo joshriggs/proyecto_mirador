@@ -1,16 +1,9 @@
 body {
   padding: 0;
-  margin: 0;
 }
 
-//Height adjustment for sticky nav;
-.page-content {
+.content-container {
   @include media($medium-large-screen) {
     padding-top: 70px;
   }
-}
-
-.page-wrap {
-  @include outer-container;
-  clear: both;
 }

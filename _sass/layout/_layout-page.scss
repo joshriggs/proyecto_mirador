@@ -1,0 +1,23 @@
+.content-wrapper {
+  @include outer-container;
+  margin-bottom: $gutter;
+  
+  @include direction-context(right-to-left){
+
+    .page-content {
+      @include span-columns(12);
+
+      @include media($medium-large-screen) {
+        @include span-columns(8.5);
+      }
+    }
+
+    .sidebar {
+      @include span-columns(12);
+
+      @include media($medium-large-screen) {
+        @include span-columns(3.5);
+      }
+    }
+  }
+}
