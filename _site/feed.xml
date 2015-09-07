@@ -4,10 +4,10 @@
     <title>Proyecto Mirador</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>joshriggs.github.iohttp://joshriggs.net/proyecto_mirador/</link>
-    <atom:link href="joshriggs.github.iohttp://joshriggs.net/proyecto_mirador/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Sep 2015 18:28:18 -0700</pubDate>
-    <lastBuildDate>Sun, 06 Sep 2015 18:28:18 -0700</lastBuildDate>
+    <link>joshriggs.github.io/</link>
+    <atom:link href="joshriggs.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 06 Sep 2015 18:38:29 -0700</pubDate>
+    <lastBuildDate>Sun, 06 Sep 2015 18:38:29 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Mon, 10 Aug 2015 13:19:02 -0700</pubDate>
-        <link>joshriggs.github.iohttp://joshriggs.net/proyecto_mirador/jekyll/update/2015/08/10/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">joshriggs.github.iohttp://joshriggs.net/proyecto_mirador/jekyll/update/2015/08/10/welcome-to-jekyll.html</guid>
+        <link>joshriggs.github.io/jekyll/update/2015/08/10/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">joshriggs.github.io/jekyll/update/2015/08/10/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
