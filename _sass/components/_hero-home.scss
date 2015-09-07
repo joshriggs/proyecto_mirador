@@ -22,12 +22,9 @@
   }
 
   h1 {
-    font-size: 1.25em;
-
     @include media($medium-large-screen) {
       max-width: 25em;
-      margin: 0 auto 2em auto;
-      font-size: 2em; 
+      margin: 0 auto 1em auto;
     }
   }
 
