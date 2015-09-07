@@ -19,30 +19,34 @@ h6 {
 }
 
 
-h1 {
+h1,
+%h1-font-size {
   font-size: 1.5em;
-  @include media($medium-screen) {
+  @include media($medium-large-screen) {
     font-size: 2.25em;
   }
 }
 
-h2 {
+h2,
+%h2-font-size {
   font-size: 1.25em;
-  @include media($medium-screen) {
+  @include media($medium-large-screen) {
     font-size: 1.5em;
   }
 }
 
-h3 {
+h3,
+%h3-font-size {
   font-size: 1.125em;
-  @include media($medium-screen) {
+  @include media($medium-large-screen) {
     font-size: 1.25em;
   }
 }
 
-h4 {
+h4,
+%h4-font-size {
   font-size: 1em;
-  @include media($medium-screen) {
+  @include media($medium-large-screen) {
     font-size: 1.25em;
   }
 }

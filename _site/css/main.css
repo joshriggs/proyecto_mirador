@@ -531,25 +531,25 @@ h6 {
 
 h1 {
   font-size: 1.5em; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 48.125em) {
     h1 {
       font-size: 2.25em; } }
 
 h2 {
   font-size: 1.25em; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 48.125em) {
     h2 {
       font-size: 1.5em; } }
 
 h3 {
   font-size: 1.125em; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 48.125em) {
     h3 {
       font-size: 1.25em; } }
 
 h4 {
   font-size: 1em; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 48.125em) {
     h4 {
       font-size: 1.25em; } }
 
@@ -897,13 +897,10 @@ h1.site-logo {
       padding: 0;
       text-align: center;
       background: transparent; } }
-  .hero .hero-text h1 {
-    font-size: 1.25em; }
-    @media screen and (min-width: 48.125em) {
-      .hero .hero-text h1 {
-        max-width: 25em;
-        margin: 0 auto 2em auto;
-        font-size: 2em; } }
+  @media screen and (min-width: 48.125em) {
+    .hero .hero-text h1 {
+      max-width: 25em;
+      margin: 0 auto 1em auto; } }
   @media screen and (min-width: 40em) {
     .hero .hero-text p.summary {
       font-size: 1.25em; } }
